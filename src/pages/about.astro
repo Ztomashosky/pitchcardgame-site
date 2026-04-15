@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const appStoreURL = "https://apps.apple.com/us/app/pitch31-card-game/id6758834923";
+---
+
+<BaseLayout
+  title="About Pitch31"
+  description="The story behind Pitch31 — built for a grandmother who just wanted to play cards. The only app with correct 31-point partnership Pitch rules."
+>
+  <article class="mx-auto max-w-3xl px-5 py-12 sm:px-8 sm:py-20">
+    <!-- Title -->
+    <h1 class="font-serif text-[clamp(2.25rem,5vw,3.5rem)] font-bold leading-tight text-heading">
+      About Pitch31
+    </h1>
+
+    <hr class="my-8 border-border" />
+
+    <!-- The Story -->
+    <section class="prose">
+      <h2 class="font-serif">Built for My Grandmother</h2>
+
+      <p>
+        My grandmother is 88 years old, and she still loves Pitch. She learned the game decades ago, played it every week with my grandfather and their friends, and never got tired of it. It was their thing &mdash; cards on the table, conversation across it.
+      </p>
+
+      <p>
+        When my grandfather passed, that regular foursome went with him. Some of their friends had moved away. Others couldn't make it out anymore. She didn't stop wanting to play &mdash; she just didn't have the people to play with.
+      </p>
+
+      <p>
+        I tried to find her an app. Every one I downloaded got something wrong. Wrong rules. Wrong scoring. Some bizarre 4-point version that nobody in our family has ever played. Loud ads, tiny cards, confusing menus. She tried a few and gave up.
+      </p>
+
+      <p>
+        So I built one for her.
+      </p>
+
+      <p>
+        Pitch31 plays 31-point partnership Pitch &mdash; the real version, with 54 cards, two Jokers, the Off-Jack, the protected 2 of trump, and the 3 of trump worth 3 points. Every rule is correct because I learned them from the same people she did.
+      </p>
+
+      <p>
+        The cards are large and easy to read. The table is clean and uncluttered. There are no flashing banner ads, no pop-ups asking for money, no confusing virtual currencies. You open the app and play cards. That's it.
+      </p>
+
+      <p>
+        Aging made holding a physical hand of cards harder for her. But tapping a screen? That she can do. Now she plays every day &mdash; morning coffee, after lunch, before bed. She has her foursome back.
+      </p>
+
+      <p>
+        I built this app for her. But if you grew up playing Pitch at the kitchen table and you've been looking for an app that gets the rules right, it's for you too.
+      </p>
+    </section>
+
+    <hr class="my-12 border-border" />
+
+    <!-- Why This Version -->
+    <section class="prose">
+      <h2 class="font-serif">Why This Version?</h2>
+
+      <p>
+        There are many versions of Pitch out there &mdash; 4-point, 10-point, auction pitch, setback. Most apps play one of the simpler variants. Pitch31 plays the one that serious players actually play.
+      </p>
+
+      <p>
+        31-point partnership Pitch is sometimes called the "Cadillac" variant. It uses the full 54-card deck with Jokers. It includes the Off-Jack &mdash; the Jack of the same color as trump, which crosses into the trump suit. The 3 of trump is worth 3 points, making it the most valuable and most vulnerable card on the table. The 2 of trump is a protected point that always goes back to the player who played it.
+      </p>
+
+      <p>
+        These details matter. They're what make the game strategic instead of just lucky. Deciding whether to bid, how high to bid, when to lead your Ace versus when to hold it, whether to sacrifice the 3 or protect it &mdash; that's Pitch.
+      </p>
+
+      <p>
+        If you've ever argued about the rules at a family gathering, this app settles it. Every rule in Pitch31 is documented, consistent, and correct.
+      </p>
+    </section>
+
+    <hr class="my-12 border-border" />
+
+    <!-- CTA -->
+    <div class="rounded-2xl bg-surface p-8 text-center sm:p-10">
+      <h2 class="font-serif text-2xl font-bold text-heading sm:text-3xl">
+        Ready to play?
+      </h2>
+      <p class="mx-auto mt-3 max-w-md text-text/70">
+        Download Pitch31 and experience 31-Point Partnership Pitch on your iPhone.
+      </p>
+      <div class="mt-6">
+        <a
+          href={appStoreURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary !text-lg"
+        >
+          <svg class="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+          </svg>
+          Download on the App Store
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

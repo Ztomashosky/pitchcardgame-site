@@ -1,0 +1,75 @@
+---
+const appStoreURL = "https://apps.apple.com/us/app/pitch31-card-game/id6758834923";
+
+const learnLinks = [
+  { label: "How to Play", href: "/how-to-play" },
+  { label: "Scoring Guide", href: "/blog/scoring-guide" },
+  { label: "Strategy Guide", href: "/blog/strategy-guide" },
+  { label: "Off-Jack Explained", href: "/blog/off-jack-explained" },
+  { label: "Setback vs Pitch", href: "/blog/setback-vs-pitch" },
+];
+---
+
+<footer class="border-t border-border bg-surface">
+  <!-- Main footer content -->
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-3 md:gap-12">
+    <!-- Column 1: Brand -->
+    <div>
+      <a href="/" class="text-xl font-bold text-primary no-underline hover:text-primary-hover sm:text-2xl">
+        Pitch31
+      </a>
+      <p class="mt-3 text-base leading-relaxed text-text">
+        The only app that plays 31-point partnership Pitch with the right rules.
+      </p>
+    </div>
+
+    <!-- Column 2: Learn links -->
+    <div>
+      <h3 class="mb-4 text-lg font-semibold text-heading">Learn</h3>
+      <ul class="list-none space-y-2.5 p-0">
+        {learnLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="inline-flex min-h-[48px] items-center text-base text-text no-underline hover:text-primary hover:underline"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- Column 3: Get the App -->
+    <div>
+      <h3 class="mb-4 text-lg font-semibold text-heading">Get the App</h3>
+      <a
+        href={appStoreURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary mb-4 inline-flex"
+        aria-label="Download Pitch31 on the App Store"
+      >
+        Download on the App Store
+      </a>
+      <p class="text-sm text-text/70">
+        iPhone only. Android coming soon.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-border">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-5 py-5 sm:px-8">
+      <p class="m-0 text-sm text-text/70">
+        &copy; 2026 Pitch31. Built by a Pitch family, for Pitch families.
+      </p>
+      <a
+        href="/privacy"
+        class="inline-flex min-h-[48px] items-center text-sm text-text/70 no-underline hover:text-primary hover:underline"
+      >
+        Privacy Policy
+      </a>
+    </div>
+  </div>
+</footer>

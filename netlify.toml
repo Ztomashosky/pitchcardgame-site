@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/app"
+  to = "https://apps.apple.com/us/app/pitch31-card-game/id6758834923"
+  status = 302
+  force = true

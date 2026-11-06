@@ -7,3 +7,77 @@
   to = "https://apps.apple.com/us/app/pitch31-card-game/id6758834923"
   status = 302
   force = true
+
+# The Pitch articles moved to cedarmilesoftware.com on 2026-11-06, refreshed for Pitch 31 2.0. This domain stays, and
+# forwards. Rules run top to bottom, so /app above keeps working and the catch-all has to stay last.
+[[redirects]]
+  from = "/blog/how-to-play-31-point-pitch"
+  to = "https://cedarmilesoftware.com/pitch/rules/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/pitch-card-game-scoring"
+  to = "https://cedarmilesoftware.com/pitch/rules/scoring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/pitch-scoring-explained"
+  to = "https://cedarmilesoftware.com/pitch/rules/scoring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/pitch-card-game-strategy-bidding"
+  to = "https://cedarmilesoftware.com/pitch/rules/bidding/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/pitch-bidding-strategy"
+  to = "https://cedarmilesoftware.com/pitch/rules/bidding/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/shoot-the-moon-pitch"
+  to = "https://cedarmilesoftware.com/pitch/rules/bidding/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/off-jack-pitch-card-game"
+  to = "https://cedarmilesoftware.com/pitch/rules/off-jack/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/what-is-off-jack-pitch"
+  to = "https://cedarmilesoftware.com/pitch/rules/off-jack/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/setback-vs-pitch-vs-smear"
+  to = "https://cedarmilesoftware.com/pitch/rules/setback-vs-smear/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "https://cedarmilesoftware.com/pitch/rules/"
+  status = 301
+  force = true
+
+# Served as a file, so crawlers can still read this site and find the forwards.
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "https://cedarmilesoftware.com/pitch/"
+  status = 301
+  force = true
